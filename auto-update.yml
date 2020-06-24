@@ -20,10 +20,9 @@ jobs:
         with:
           python-version: '3.x'
           architecture: 'x64'
-      - name: Fetch IPs and save them into a text file
-        run: python fetch.py
       - name: Update the hosts file
         run: |
+          python fetch.py
           mkdir -p ~/.ssh
           echo "${{ secrets.DEPLOY_PRIVATE_KEY }}" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
