@@ -17,4 +17,4 @@ with open("hosts", "w") as f:
         f.write(domain)
         f.write("\n")
 
-os.system("ll")
+os.getcwd()

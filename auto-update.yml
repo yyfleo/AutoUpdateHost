@@ -6,7 +6,7 @@ on:
   watch:
     types: started
     if: github.event.repository.owner.id == github.sender.id
-    # start manually by watching the repository
+    # start manually by star the repository
 
 jobs:
   update:
@@ -21,7 +21,7 @@ jobs:
           python-version: '3.x'
           architecture: 'x64'
       - name: Fetch IPs and save them into a text file
-        run: python fetch.py&&ll
+        run: python fetch.py
       - name: Update the hosts file
         run: |
           mkdir -p ~/.ssh
