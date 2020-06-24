@@ -1,4 +1,4 @@
-name: update hosts daily
+name: Update hosts daily
 on:
   schedule:
     - cron: '0 0 * * *'
