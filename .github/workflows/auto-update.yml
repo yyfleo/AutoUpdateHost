@@ -22,6 +22,7 @@ jobs:
           architecture: 'x64'
       - name: Update the hosts file
         run: |
+          pwd
           python fetch.py
           mkdir -p ~/.ssh
           echo "${{ secrets.DEPLOY_PRIVATE_KEY }}" > ~/.ssh/id_rsa
