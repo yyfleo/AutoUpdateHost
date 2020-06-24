@@ -1,0 +1,33 @@
+name: update hosts daily
+on:
+  schedule:
+    - cron: '0 0 * * *'
+    # run everyday
+  watch:
+    types: started
+    if: github.event.repository.owner.id == github.sender.id
+    # start manually by watching the repository
+
+jobs:
+  update:
+    name: Refresh and update the hosts file
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download latest update script
+        uses: action/checkout@v2
+      - name: Set up python environment
+        uses: action/setup-python@v2
+        with:
+          python-version: '3.x'
+          architecture: 'x64'
+      - name: Fetch IPs and save them into a text file
+        run: python fetch.py
+      - name: Update the hosts file
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.DEPLOY_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan github.com > ~/.ssh/known_hosts
+          git config --global user.name 'Leo Yang'
+          git config --global user.email '731193292@qq.com'
+          git pull origin master
