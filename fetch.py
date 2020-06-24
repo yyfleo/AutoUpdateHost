@@ -1,4 +1,4 @@
-import socket, time, os, sys
+import socket, time
 
 domains=["www.google.com", "www.twitter.com", "www.facebook.com", "raw.githubusercontent.com"]
 
@@ -16,7 +16,3 @@ with open("hosts", "w") as f:
         f.write(" ")
         f.write(domain)
         f.write("\n")
-
-os.system("dir")
-os.system("ls")
-os.system("ll")
