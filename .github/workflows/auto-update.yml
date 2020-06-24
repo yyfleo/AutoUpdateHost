@@ -23,9 +23,6 @@ jobs:
       - name: Update the hosts file
         run: |
           python fetch.py;
-          dir;
-          ls;
-          ll;
           mkdir -p ~/.ssh;
           echo "${{ secrets.DEPLOY_PRIVATE_KEY }}" > ~/.ssh/id_rsa;
           chmod 600 ~/.ssh/id_rsa;
