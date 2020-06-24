@@ -1,8 +1,8 @@
-import socket, time, os
+import socket, time, os, sys
 
 domains=["www.google.com", "www.twitter.com", "www.facebook.com", "raw.githubusercontent.com"]
 
-with open("hosts", "w") as f:
+with open(sys.argv[1] + "/hosts", "w") as f:
     f.write("# Updated On ")
     f.write(time.asctime(time.localtime(time.time())))
     f.write("\n# By yyfleo.\n")
@@ -17,4 +17,4 @@ with open("hosts", "w") as f:
         f.write(domain)
         f.write("\n")
 
-os.getcwd()
+print(os.getcwd())
