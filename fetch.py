@@ -2,7 +2,7 @@ import socket, time
 
 domains=["www.google.com", "www.twitter.com", "www.facebook.com", "www.youtube.com", "raw.githubusercontent.com"]
 
-with open("hosts", "w") as f:
+with open("docs/hosts", "w") as f:
     f.write("# Updated On ")
     f.write(time.asctime(time.localtime(time.time())))
     f.write("\n# By yyfleo.\n")
