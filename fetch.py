@@ -7,7 +7,7 @@ if not os.path.exists("docs"):
 with open("docs/hosts", "w") as f:
     f.write("# Updated On ")
     f.write(time.asctime(time.localtime(time.time())))
-    f.write("\n# By yyfleo.\n")
+    f.write(" (UTC)\n# By yyfleo.\n")
     f.write("127.0.0.1 localhost\n::1 ip6-localhost\n")
     for domain in domains:
         domainInfo = socket.getaddrinfo(domain, 443)
