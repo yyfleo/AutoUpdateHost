@@ -1,7 +1,9 @@
-import socket, time
+import socket, time, os
 
 domains=["www.google.com", "www.twitter.com", "www.facebook.com", "www.youtube.com", "raw.githubusercontent.com"]
 
+if not os.path.exists("docs"):
+    os.makedirs("docs")
 with open("docs/hosts", "w") as f:
     f.write("# Updated On ")
     f.write(time.asctime(time.localtime(time.time())))
