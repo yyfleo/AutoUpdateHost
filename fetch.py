@@ -1,6 +1,6 @@
 import socket, time
 
-domains=["www.google.com", "www.twitter.com", "www.facebook.com", "raw.githubusercontent.com"]
+domains=["www.google.com", "www.twitter.com", "www.facebook.com", "www.youtube.com", "raw.githubusercontent.com"]
 
 with open("hosts", "w") as f:
     f.write("# Updated On ")
