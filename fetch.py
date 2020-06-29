@@ -1,6 +1,6 @@
 import socket, time, os
 
-domains=["www.google.com", "www.twitter.com", "www.facebook.com", "www.youtube.com", "raw.githubusercontent.com", "instagram.com", "pixiv.net", "telegram.org", "steamcommunity.com", "logmein.com"]
+domains=["google.com", "twitter.com", "facebook.com", "youtube.com", "githubusercontent.com", "instagram.com", "pixiv.net", "telegram.org", "steamcommunity.com", "logmein.com"]
 
 if not os.path.exists("docs"):
     os.makedirs("docs")
