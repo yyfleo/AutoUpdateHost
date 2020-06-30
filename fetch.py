@@ -10,6 +10,7 @@ with open("docs/hosts", "w") as f:
     f.write(" (UTC)\n# By yyfleo.\n")
     f.write("127.0.0.1 localhost\n::1 ip6-localhost\n")
     for domain in domains:
+        print("Fetching the IP of " + domain)
         domainInfo = socket.getaddrinfo(domain, 443)
         f.write(domainInfo[0][4][0])
         f.write(" ")
