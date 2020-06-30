@@ -14,8 +14,8 @@ with open("docs/hosts", "w") as f:
         domainInfo = socket.getaddrinfo(domain, 443)
         f.write(domainInfo[0][4][0])
         f.write(" ")
-        if not len(domain.split(".")) == 2:
-            temp = domain.split(".")
-            domain = temp[len(temp) - 2] + "." + temp[len(temp) - 1]
+        # if not len(domain.split(".")) == 2:
+        #     temp = domain.split(".")
+        #     domain = temp[len(temp) - 2] + "." + temp[len(temp) - 1]
         f.write(domain)
         f.write("\n")
