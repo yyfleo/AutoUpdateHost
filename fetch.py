@@ -16,6 +16,6 @@ with open("docs/hosts", "w") as f:
         f.write(" ")
         if not len(domain.split(".")) == 2:
             temp = domain.split(".")
-            domain = temp[len(temp) - 2] + temp[len(temp) - 1]
+            domain = temp[len(temp) - 2] + "." + temp[len(temp) - 1]
         f.write(domain)
         f.write("\n")
