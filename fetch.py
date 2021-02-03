@@ -1,6 +1,6 @@
 import socket, time, os
 
-domains=["google.com", "twitter.com", "facebook.com", "youtube.com", "raw.githubusercontent.com", "instagram.com", "pixiv.net", "telegram.org", "steamcommunity.com", "logmein.com", "config.getsync.com"]
+domains=["google.com", "twitter.com", "facebook.com", "youtube.com", "raw.githubusercontent.com", "instagram.com", "pixiv.net", "telegram.org", "steamcommunity.com", "logmein.com", "config.getsync.com", "config.resilio.com"]
 
 if not os.path.exists("docs"):
     os.makedirs("docs")
