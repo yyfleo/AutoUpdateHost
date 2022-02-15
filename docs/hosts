@@ -1,16 +1,16 @@
-# Updated On Mon Feb 14 00:26:43 2022 (UTC)
+# Updated On Tue Feb 15 00:27:39 2022 (UTC)
 # By yyfleo.
 127.0.0.1 localhost
 ::1 ip6-localhost
-142.251.33.78 google.com
+142.251.33.14 google.com
 104.244.42.1 twitter.com
-157.240.22.35 facebook.com
-142.250.217.78 youtube.com
-185.199.111.133 raw.githubusercontent.com
-157.240.22.174 instagram.com
-210.140.92.186 pixiv.net
+157.240.2.35 facebook.com
+172.217.1.142 youtube.com
+185.199.108.133 raw.githubusercontent.com
+157.240.2.174 instagram.com
+210.140.92.180 pixiv.net
 149.154.167.99 telegram.org
-184.51.182.254 steamcommunity.com
-52.178.114.226 logmein.com
-18.65.229.24 config.getsync.com
-52.84.184.14 config.resilio.com
+96.6.190.4 steamcommunity.com
+40.71.199.117 logmein.com
+108.156.211.35 config.getsync.com
+143.204.154.46 config.resilio.com
